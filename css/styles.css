@@ -100,7 +100,9 @@ a:hover {
       max-width: 300px;
       background: #777;
       box-shadow: 0 15px 10px #777;
-      transform: rotate(-3deg); }
+      transform: rotate(3deg);
+      right: 10px;
+      left: auto; }
     .main-news__news-item .content-block .img-block {
       background: linear-gradient(0deg, #000000 0%, rgba(0, 0, 0, 0) 14.66%); }
       .main-news__news-item .content-block .img-block img {
