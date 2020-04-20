@@ -75,7 +75,8 @@ a:hover {
   margin-bottom: 30px; }
   .main-news__news-item .content-block {
     border-radius: 4px;
-    position: relative; }
+    position: relative;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25); }
     .main-news__news-item .content-block::before {
       content: "";
       z-index: -1;
