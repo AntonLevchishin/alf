@@ -1,0 +1,373 @@
+@import "fonts-colors.scss";
+
+
+
+body {
+  background-color: $bg-color;
+  color: #26292d;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  line-height: 1;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+
+  li {
+    list-style: none;
+  }
+}
+
+a {
+  &:hover {
+    text-decoration: none !important;
+  }
+}
+
+/*----- header section start-----*/
+.header {
+  &__block {
+    background: #171920;
+    padding-top: 17px;
+    padding-bottom: 17px;
+  }
+
+  &__logo-left {
+    justify-content: center;
+  }
+
+  &__menu-right {
+    .menu-nav {
+      .nav-link {
+        padding: 0;
+
+        .link-menu {
+
+          &:hover {
+            color: #FFFFFF;
+
+            &::after {
+              visibility: visible;
+              opacity: 1;
+              transition: 0.4s;
+              width: 100%;
+            }
+          }
+
+          padding: 19px 19px 30px 19px;
+          color: #A2A3A6;
+          font-weight: bold;
+          font-size: 16px;
+          line-height: 22px;
+          text-transform: uppercase;
+          position: relative;
+          transition: color 0.4s;
+
+          &::after {
+            content: "";
+            display: block;
+            width: 0;
+            height: 4px;
+            background: #FF0303;
+            position: absolute;
+            top: 70px;
+            left: 0;
+            visibility: hidden;
+            opacity: 0;
+          }
+        }
+
+        .active {
+          color: #FFFFFF;
+
+          &::after {
+            visibility: visible;
+            opacity: 1;
+            transition: 0.4s;
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+
+/*----- header section end-----*/
+
+
+/*----- Main start-----*/
+
+.main-news {
+  &__container {
+    padding-top: 52px;
+  }
+
+  &__text-block {
+    margin-bottom: 38px;
+  }
+
+  &__news-block {}
+
+  &__news-item {
+    margin-bottom: 30px;
+
+    .content-block {
+      border-radius: 4px;
+      padding-bottom: 23px;
+
+      .img-block {
+        background: linear-gradient(0deg, #000000 0%, rgba(0, 0, 0, 0) 14.66%);
+
+        img {
+          display: block;
+          width: 100%;
+          height: 214px;
+          position: relative;
+          z-index: -2;
+        }
+      }
+
+      .text-block {
+        background: #f9f9f9;
+        padding: 20px 25px 23px 25px;
+
+        .news-item-subtext {
+          margin-bottom: 20px;
+          font-weight: 600;
+          font-size: 16px;
+          line-height: 21px;
+        }
+
+        .news-item-text {
+          font-weight: normal;
+          font-size: 14px;
+          line-height: 20px;
+        }
+
+        .read-more {
+          color: #FF0303;
+          font-weight: bold;
+          font-size: 14px;
+          line-height: 19px;
+          letter-spacing: 0.05em;
+
+          &:hover {
+            .arrow-parent {
+              margin-left: 40px;
+              transition: 0.4s;
+
+              .right {
+                visibility: visible;
+                opacity: 1;
+                width: 30px;
+              }
+            }
+          }
+
+          .arrow-parent {
+            position: relative;
+            margin-left: 20px;
+            top: 7px;
+            transition: 0.4s;
+
+            i {
+              right: 0px;
+              border: solid black;
+              border-width: 0 2px 2px 0;
+              display: inline-block;
+              border-color: #FF0303;
+
+            }
+
+            .right-arrow {
+              padding: 3px;
+              transform: rotate(-45deg);
+              -webkit-transform: rotate(-45deg);
+              position: absolute;
+            }
+
+            .right {
+              content: "";
+              width: 10px;
+              height: 2px;
+              display: inline-block;
+              background-color: red;
+              position: absolute;
+              transition: 0.4s;
+              top: 3px;
+              visibility: hidden;
+              opacity: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &__name-news {
+    color: #171920;
+    margin-bottom: 30px;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 41px;
+  }
+
+  &__menu-list {
+
+    li {
+      margin-right: 60px;
+
+      a {
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 22px;
+        color: #B7B7B7;
+        text-transform: uppercase;
+        transition: color 0.4s;
+
+        &:hover {
+          color: #171920;
+        }
+      }
+
+      .active {
+        color: #171920;
+      }
+    }
+  }
+
+  &__main-btn {
+    button {
+      width: 100%;
+      height: 40px;
+      padding: 0;
+      color: aliceblue;
+      background: #171920;
+      border: none;
+      border-radius: 4px;
+
+      img {
+        margin-left: 10px;
+      }
+    }
+  }
+}
+
+.raiting {
+
+  &__bk-rating {
+    background-color: $bg-raiting-bk;
+    box-shadow: 0px 0px 20px rgba(150, 150, 150, 0.1);
+    height: 800px;
+  }
+
+  &__name-block {
+    margin-top: 50px;
+    margin-bottom: 26px;
+
+    h3 {
+      font-weight: bold;
+      font-size: 20px;
+      line-height: 27px;
+    }
+  }
+
+  &__block-item {
+    margin-bottom: 28px;
+
+    .bk-name {
+      img {
+        border-radius: 4px;
+        width: 100px;
+      }
+    }
+
+    .bk-gift {
+      margin-left: 25px;
+      margin-right: 28px;
+
+      span {
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 19px;
+        color: #5C5E5E;
+
+        img {
+          vertical-align: baseline;
+        }
+      }
+    }
+
+    .raiting-btn {
+
+      .btn-link {
+        border-radius: 4px;
+        background: #FF0303;
+        padding: 7px 21px 8px 21px;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 19px;
+        color: #FFFFFF;
+        letter-spacing: 0.05em;
+      }
+    }
+  }
+
+  &__footer-btn {
+    button {
+      width: 100%;
+      height: 40px;
+      padding: 0;
+      color: aliceblue;
+      background: #171920;
+      border: none;
+      border-radius: 4px;
+      font-weight: bold;
+      font-size: 14px;
+      line-height: 21px;
+      letter-spacing: 0.05em;
+    }
+  }
+}
+
+/*----- Main end-----*/
+
+
+/*----- Footer-----*/
+
+.footer {
+  background: #171920;
+  color: $color-text-footer;
+  font-size: 12px;
+
+  &__adulthood {
+
+    .eighteen-block {
+      display: inline-block;
+      margin-right: 7px;
+
+      .eighteen {
+        color: aliceblue;
+        font-size: 17px;
+        width: 21px;
+        height: 18px;
+        background-color: red;
+        border-radius: 4px;
+      }
+    }
+
+    .eighteen-block-text {
+      display: inline-block;
+      vertical-align: sub;
+    }
+
+  }
+
+  &__renouncement {
+    border-top: 1px solid grey;
+  }
+
+}
