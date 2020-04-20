@@ -119,9 +119,9 @@ a {
       position: relative;
 
       &::before {
+        content: "";
         z-index: -1;
         position: absolute;
-        content: "";
         bottom: 15px;
         left: 10px;
         width: 50%;
