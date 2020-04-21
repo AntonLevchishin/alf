@@ -164,17 +164,23 @@ a {
         background: #f9f9f9;
         padding: 20px 25px 23px 25px;
 
-        .news-item-subtext {
-          margin-bottom: 20px;
-          font-weight: 600;
-          font-size: 16px;
-          line-height: 21px;
-        }
+        .hell {
+          height: 199px;
+          overflow: hidden;
+          margin-bottom: 15px;
 
-        .news-item-text {
-          font-weight: normal;
-          font-size: 14px;
-          line-height: 20px;
+          .news-item-subtext {
+            margin-bottom: 20px;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 21px;
+          }
+
+          .news-item-text {
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 20px;
+          }
         }
 
         .read-more {
@@ -291,7 +297,6 @@ a {
   &__bk-rating {
     background-color: $bg-raiting-bk;
     box-shadow: 0px 0px 20px rgba(150, 150, 150, 0.1);
-    height: 800px;
   }
 
   &__name-block {
@@ -318,6 +323,7 @@ a {
     .bk-gift {
       margin-left: 25px;
       margin-right: 28px;
+      min-width: 60px;
 
       span {
         font-weight: normal;

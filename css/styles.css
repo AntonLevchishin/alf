@@ -114,15 +114,19 @@ a:hover {
     .main-news__news-item .content-block .text-block {
       background: #f9f9f9;
       padding: 20px 25px 23px 25px; }
-      .main-news__news-item .content-block .text-block .news-item-subtext {
-        margin-bottom: 20px;
-        font-weight: 600;
-        font-size: 16px;
-        line-height: 21px; }
-      .main-news__news-item .content-block .text-block .news-item-text {
-        font-weight: normal;
-        font-size: 14px;
-        line-height: 20px; }
+      .main-news__news-item .content-block .text-block .hell {
+        height: 199px;
+        overflow: hidden;
+        margin-bottom: 15px; }
+        .main-news__news-item .content-block .text-block .hell .news-item-subtext {
+          margin-bottom: 20px;
+          font-weight: 600;
+          font-size: 16px;
+          line-height: 21px; }
+        .main-news__news-item .content-block .text-block .hell .news-item-text {
+          font-weight: normal;
+          font-size: 14px;
+          line-height: 20px; }
       .main-news__news-item .content-block .text-block .read-more {
         color: #FF0303;
         font-weight: bold;
@@ -198,8 +202,7 @@ a:hover {
 
 .raiting__bk-rating {
   background-color: #F3F5F6;
-  box-shadow: 0px 0px 20px rgba(150, 150, 150, 0.1);
-  height: 800px; }
+  box-shadow: 0px 0px 20px rgba(150, 150, 150, 0.1); }
 
 .raiting__name-block {
   margin-top: 50px;
@@ -216,7 +219,8 @@ a:hover {
     width: 100px; }
   .raiting__block-item .bk-gift {
     margin-left: 25px;
-    margin-right: 28px; }
+    margin-right: 28px;
+    min-width: 60px; }
     .raiting__block-item .bk-gift span {
       font-weight: normal;
       font-size: 14px;

@@ -1,0 +1,32 @@
+@media only screen and (max-width: 1199px) {
+
+  .main-news {
+    &__news-item {
+      .content-block {
+        .text-block {
+          padding: 16px 16px 16px 16px;
+        }
+
+        .img-block {
+          img {
+            height: 190px
+          }
+        }
+      }
+    }
+  }
+
+  .raiting {
+    &__block-item {
+      margin-bottom: 28px;
+
+
+      .bk-gift {
+        margin-left: 12px;
+        margin-right: 12px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 991px) {}
