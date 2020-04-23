@@ -8,3 +8,63 @@
     .raiting__block-item .bk-gift {
       margin-left: 12px;
       margin-right: 12px; } }
+
+@media only screen and (max-width: 991px) {
+  .main-news__news-item .content-block .img-block img {
+    height: auto; }
+  .main-news__news-item .content-block .text-block .inner-text-wrap {
+    height: 165px; }
+    .main-news__news-item .content-block .text-block .inner-text-wrap .news-item-subtext {
+      margin-bottom: 13px; }
+  .raiting__block-item {
+    margin-bottom: 28px; }
+    .raiting__block-item .bk-name img {
+      width: 75px; }
+    .raiting__block-item .bk-gift {
+      margin-left: 12px;
+      margin-right: 12px;
+      min-width: 52px; }
+      .raiting__block-item .bk-gift img {
+        display: none; }
+    .raiting__block-item .raiting-btn .btn-link {
+      padding: 5px 11px 5px 11px;
+      font-size: 12px; }
+  .raiting__footer-btn button {
+    height: 36px;
+    font-size: 12px; } }
+
+@media only screen and (max-width: 767px) {
+  .header__menu-right .menu-nav {
+    display: none !important; }
+  .header__menu-right .slicknav_menu {
+    display: block; }
+  .raiting__name-block {
+    margin-top: 20px; }
+  .raiting__block-item {
+    margin-bottom: 28px; }
+    .raiting__block-item .bk-name img {
+      width: 100px; }
+    .raiting__block-item .bk-gift {
+      margin-left: 25px;
+      margin-right: 28px;
+      min-width: 52px; }
+      .raiting__block-item .bk-gift img {
+        display: inline-block; }
+    .raiting__block-item .raiting-btn .btn-link {
+      padding: 7px 21px 8px 21px;
+      font-size: 14px; }
+  .raiting__footer-btn button {
+    height: 40px;
+    font-size: 14px; }
+  .footer__block-logo {
+    display: none; }
+  .footer__adulthood {
+    margin-top: 10px; }
+  .footer__copyright {
+    margin-top: 10px; } }
+
+@media only screen and (max-width: 576px) {
+  .header__logo-left {
+    margin-left: 20px; }
+  .header__menu-right {
+    margin-right: 20px; } }

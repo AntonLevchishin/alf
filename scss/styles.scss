@@ -1,7 +1,5 @@
 @import "fonts-colors.scss";
 
-
-
 body {
   background-color: $bg-color;
   color: #26292d;
@@ -27,11 +25,12 @@ a {
 }
 
 /*----- header section start-----*/
+
 .header {
   &__block {
     background: #171920;
-    padding-top: 17px;
-    padding-bottom: 17px;
+    padding-top: 12px;
+    padding-bottom: 12px;
   }
 
   &__logo-left {
@@ -39,6 +38,8 @@ a {
   }
 
   &__menu-right {
+    position: relative;
+
     .menu-nav {
       .nav-link {
         padding: 0;
@@ -72,7 +73,7 @@ a {
             height: 4px;
             background: #FF0303;
             position: absolute;
-            top: 70px;
+            top: 65px;
             left: 0;
             visibility: hidden;
             opacity: 0;
@@ -105,7 +106,7 @@ a {
   }
 
   &__text-block {
-    margin-bottom: 38px;
+    // margin-bottom: 38px;
   }
 
   &__news-block {}
@@ -164,7 +165,7 @@ a {
         background: #f9f9f9;
         padding: 20px 25px 23px 25px;
 
-        .hell {
+        .inner-text-wrap {
           height: 199px;
           overflow: hidden;
           margin-bottom: 15px;
@@ -284,10 +285,6 @@ a {
       background: #171920;
       border: none;
       border-radius: 4px;
-
-      img {
-        margin-left: 10px;
-      }
     }
   }
 }
@@ -321,9 +318,6 @@ a {
     }
 
     .bk-gift {
-      margin-left: 25px;
-      margin-right: 28px;
-      min-width: 60px;
 
       span {
         font-weight: normal;

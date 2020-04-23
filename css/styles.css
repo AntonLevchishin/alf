@@ -20,56 +20,55 @@ a:hover {
 /*----- header section start-----*/
 .header__block {
   background: #171920;
-  padding-top: 17px;
-  padding-bottom: 17px; }
+  padding-top: 12px;
+  padding-bottom: 12px; }
 
 .header__logo-left {
   justify-content: center; }
 
-.header__menu-right .menu-nav .nav-link {
-  padding: 0; }
-  .header__menu-right .menu-nav .nav-link .link-menu {
-    padding: 19px 19px 30px 19px;
-    color: #A2A3A6;
-    font-weight: bold;
-    font-size: 16px;
-    line-height: 22px;
-    text-transform: uppercase;
-    position: relative;
-    transition: color 0.4s; }
-    .header__menu-right .menu-nav .nav-link .link-menu:hover {
+.header__menu-right {
+  position: relative; }
+  .header__menu-right .menu-nav .nav-link {
+    padding: 0; }
+    .header__menu-right .menu-nav .nav-link .link-menu {
+      padding: 19px 19px 30px 19px;
+      color: #A2A3A6;
+      font-weight: bold;
+      font-size: 16px;
+      line-height: 22px;
+      text-transform: uppercase;
+      position: relative;
+      transition: color 0.4s; }
+      .header__menu-right .menu-nav .nav-link .link-menu:hover {
+        color: #FFFFFF; }
+        .header__menu-right .menu-nav .nav-link .link-menu:hover::after {
+          visibility: visible;
+          opacity: 1;
+          transition: 0.4s;
+          width: 100%; }
+      .header__menu-right .menu-nav .nav-link .link-menu::after {
+        content: "";
+        display: block;
+        width: 0;
+        height: 4px;
+        background: #FF0303;
+        position: absolute;
+        top: 65px;
+        left: 0;
+        visibility: hidden;
+        opacity: 0; }
+    .header__menu-right .menu-nav .nav-link .active {
       color: #FFFFFF; }
-      .header__menu-right .menu-nav .nav-link .link-menu:hover::after {
+      .header__menu-right .menu-nav .nav-link .active::after {
         visibility: visible;
         opacity: 1;
         transition: 0.4s;
         width: 100%; }
-    .header__menu-right .menu-nav .nav-link .link-menu::after {
-      content: "";
-      display: block;
-      width: 0;
-      height: 4px;
-      background: #FF0303;
-      position: absolute;
-      top: 70px;
-      left: 0;
-      visibility: hidden;
-      opacity: 0; }
-  .header__menu-right .menu-nav .nav-link .active {
-    color: #FFFFFF; }
-    .header__menu-right .menu-nav .nav-link .active::after {
-      visibility: visible;
-      opacity: 1;
-      transition: 0.4s;
-      width: 100%; }
 
 /*----- header section end-----*/
 /*----- Main start-----*/
 .main-news__container {
   padding-top: 52px; }
-
-.main-news__text-block {
-  margin-bottom: 38px; }
 
 .main-news__news-item {
   margin-bottom: 30px; }
@@ -114,16 +113,16 @@ a:hover {
     .main-news__news-item .content-block .text-block {
       background: #f9f9f9;
       padding: 20px 25px 23px 25px; }
-      .main-news__news-item .content-block .text-block .hell {
+      .main-news__news-item .content-block .text-block .inner-text-wrap {
         height: 199px;
         overflow: hidden;
         margin-bottom: 15px; }
-        .main-news__news-item .content-block .text-block .hell .news-item-subtext {
+        .main-news__news-item .content-block .text-block .inner-text-wrap .news-item-subtext {
           margin-bottom: 20px;
           font-weight: 600;
           font-size: 16px;
           line-height: 21px; }
-        .main-news__news-item .content-block .text-block .hell .news-item-text {
+        .main-news__news-item .content-block .text-block .inner-text-wrap .news-item-text {
           font-weight: normal;
           font-size: 14px;
           line-height: 20px; }
@@ -197,8 +196,6 @@ a:hover {
   background: #171920;
   border: none;
   border-radius: 4px; }
-  .main-news__main-btn button img {
-    margin-left: 10px; }
 
 .raiting__bk-rating {
   background-color: #F3F5F6;
@@ -217,17 +214,13 @@ a:hover {
   .raiting__block-item .bk-name img {
     border-radius: 4px;
     width: 100px; }
-  .raiting__block-item .bk-gift {
-    margin-left: 25px;
-    margin-right: 28px;
-    min-width: 60px; }
-    .raiting__block-item .bk-gift span {
-      font-weight: normal;
-      font-size: 14px;
-      line-height: 19px;
-      color: #5C5E5E; }
-      .raiting__block-item .bk-gift span img {
-        vertical-align: baseline; }
+  .raiting__block-item .bk-gift span {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    color: #5C5E5E; }
+    .raiting__block-item .bk-gift span img {
+      vertical-align: baseline; }
   .raiting__block-item .raiting-btn .btn-link {
     border-radius: 4px;
     background: #FF0303;

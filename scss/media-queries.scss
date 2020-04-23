@@ -29,4 +29,148 @@
   }
 }
 
-@media only screen and (max-width: 991px) {}
+@media only screen and (max-width: 991px) {
+
+  .main-news {
+    &__news-item {
+      .content-block {
+        .img-block {
+          img {
+            height: auto;
+          }
+        }
+
+        .text-block {
+          .inner-text-wrap {
+            height: 165px;
+
+            .news-item-subtext {
+              margin-bottom: 13px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .raiting {
+    &__block-item {
+      margin-bottom: 28px;
+
+      .bk-name {
+        img {
+          width: 75px;
+        }
+      }
+
+
+      .bk-gift {
+        margin-left: 12px;
+        margin-right: 12px;
+        min-width: 52px;
+
+        img {
+          display: none;
+        }
+      }
+
+      .raiting-btn {
+        .btn-link {
+          padding: 5px 11px 5px 11px;
+          font-size: 12px;
+        }
+      }
+    }
+
+    &__footer-btn {
+      button {
+        height: 36px;
+        font-size: 12px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .header {
+    &__menu-right {
+      .menu-nav {
+        display: none !important;
+      }
+
+      .slicknav_menu {
+        display: block;
+      }
+
+    }
+  }
+
+  .raiting {
+
+    &__name-block {
+      margin-top: 20px;
+    }
+
+    &__block-item {
+      margin-bottom: 28px;
+
+      .bk-name {
+        img {
+          width: 100px;
+        }
+      }
+
+      .bk-gift {
+        margin-left: 25px;
+        margin-right: 28px;
+        min-width: 52px;
+
+        img {
+          display: inline-block;
+        }
+      }
+
+      .raiting-btn {
+        .btn-link {
+          padding: 7px 21px 8px 21px;
+          font-size: 14px;
+        }
+      }
+    }
+
+    &__footer-btn {
+      button {
+        height: 40px;
+        font-size: 14px;
+      }
+    }
+  }
+
+  .footer {
+
+    &__block-logo {
+      display: none;
+    }
+
+    &__adulthood {
+      margin-top: 10px;
+    }
+
+    &__copyright {
+      margin-top: 10px;
+    }
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .header {
+
+    &__logo-left {
+      margin-left: 20px;
+    }
+
+    &__menu-right {
+      margin-right: 20px;
+    }
+  }
+}

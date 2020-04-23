@@ -21,6 +21,14 @@
               <a class="link-menu" href="#">Прогнозы</a>
             </li>
           </ul>
+          <ul class="burger-menu" id="menu">
+            <ul>
+              <li><a href="#">рейтинг</a></li>
+              <li><a href="#">новости</a></li>
+              <li><a href="#">бонусы</a></li>
+              <li><a href="#">прогнозы</a></li>
+            </ul>
+          </ul>
         </div>
       </div>
     </div>
@@ -30,18 +38,16 @@
 <!-- Main -->
 
 <div class="container">
-  <div class="row m-0 p-0 " id="content">
-    <!-- <div id="content">
+  <div class="row" id="content">
 
-    </div> -->
   </div>
 </div>
 
 <!-- Footer -->
 <div class="footer">
   <div class="container">
-    <div class="row justify-content-between align-items-center pt-4 pb-4 mr-0">
-      <div>
+    <div class="row justify-content-between align-items-center pt-3 pb-3 pt-md-4 pb-md-4 mr-0 flex-column flex-md-row">
+      <div class="footer__block-logo">
         <a href="#"><img src="img/logo.svg" alt="Logo"></a>
       </div>
       <div> <span>Вопросы и замечания:<br> <img src="img/icon/mail.svg" alt=""> info@bezazarta.com</span></div>
@@ -59,3 +65,10 @@
     </span>
   </div>
 </div>
+
+<script src="js/jquery.slicknav.js"></script>
+<script type="text/javascript">
+  $(document).ready(function () {
+    $('#menu').slicknav();
+  });
+</script>
