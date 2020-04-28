@@ -149,7 +149,11 @@
   .footer {
 
     &__block-logo {
-      display: none;
+      // display: none;
+    }
+
+    &__questions {
+      margin-top: 10px;
     }
 
     &__adulthood {
