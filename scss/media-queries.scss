@@ -93,6 +93,15 @@
 
 @media only screen and (max-width: 767px) {
   .header {
+
+    &__block {
+      .container {
+        .row {
+          margin-right: 0;
+        }
+      }
+    }
+
     &__menu-right {
       .menu-nav {
         display: none !important;
@@ -103,6 +112,18 @@
       }
 
     }
+  }
+
+  .main-news__container {
+    padding-right: 0;
+  }
+
+  .main-one-news__container {
+    padding-right: 0;
+  }
+
+  .main-one-news__news-block {
+    padding-right: 0;
   }
 
   .raiting {
