@@ -133,9 +133,9 @@
           '_collapsed">',
         '<span class="' + prefix + '_menutxt">' + settings.label + "</span>",
         '<span class="' + iconClass + '">',
-        '<span class="' + prefix + '_icon-bar"></span>',
-        '<span class="' + prefix + '_icon-bar average "></span>',
-        '<span class="' + prefix + '_icon-bar"></span>',
+        '<span class="' + prefix + '_icon-bar span1"></span>',
+        '<span class="' + prefix + '_icon-bar average span2"></span>',
+        '<span class="' + prefix + '_icon-bar span3"></span>',
         "</span>",
         "</" + settings.parentTag + ">",
       ].join("")
