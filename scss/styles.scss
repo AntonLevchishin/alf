@@ -28,7 +28,7 @@ a {
 
 .header {
   &__block {
-    background: #171920;
+    background: $bg-header;
     padding-top: 12px;
     padding-bottom: 12px;
   }
@@ -47,7 +47,7 @@ a {
         .link-menu {
 
           &:hover {
-            color: #FFFFFF;
+            color: $menu-hover-text;
 
             &::after {
               visibility: visible;
@@ -58,7 +58,7 @@ a {
           }
 
           padding: 19px 19px 30px 19px;
-          color: #A2A3A6;
+          color: $color-menu-text;
           font-weight: bold;
           font-size: 16px;
           line-height: 22px;
@@ -71,7 +71,7 @@ a {
             display: block;
             width: 0;
             height: 4px;
-            background: #FF0303;
+            background: $line-hover-menu;
             position: absolute;
             top: 65px;
             left: 0;
@@ -81,7 +81,7 @@ a {
         }
 
         .active {
-          color: #FFFFFF;
+          color: $menu-hover-text;
 
           &::after {
             visibility: visible;
@@ -162,7 +162,7 @@ a {
       }
 
       .text-block {
-        background: #f9f9f9;
+        background: $bg-news-text-block;
         padding: 20px 25px 23px 25px;
 
         .inner-text-wrap {
@@ -185,7 +185,7 @@ a {
         }
 
         .read-more {
-          color: #FF0303;
+          color: $read-more-color;
           font-weight: bold;
           font-size: 14px;
           line-height: 19px;
@@ -215,7 +215,7 @@ a {
               border: solid black;
               border-width: 0 2px 2px 0;
               display: inline-block;
-              border-color: #FF0303;
+              border-color: $read-more-color;
 
             }
 
@@ -231,7 +231,7 @@ a {
               width: 10px;
               height: 2px;
               display: inline-block;
-              background-color: red;
+              background-color: $read-more-color;
               position: absolute;
               transition: 0.4s;
               top: 3px;
@@ -245,7 +245,7 @@ a {
   }
 
   &__name-news {
-    color: #171920;
+    color: $color-text-submenu-active;
     margin-bottom: 30px;
     font-weight: bold;
     font-size: 30px;
@@ -254,6 +254,7 @@ a {
 
   &__menu-list {
 
+
     li {
       margin-right: 60px;
 
@@ -261,17 +262,17 @@ a {
         font-weight: normal;
         font-size: 16px;
         line-height: 22px;
-        color: #B7B7B7;
+        color: $color-text-submenu;
         text-transform: uppercase;
         transition: color 0.4s;
 
         &:hover {
-          color: #171920;
+          color: $color-text-submenu-active
         }
       }
 
       .active {
-        color: #171920;
+        color: $color-text-submenu-active;
       }
     }
   }
@@ -282,8 +283,8 @@ a {
       border: none;
       width: 100%;
       height: 40px;
-      color: aliceblue;
-      background: #171920;
+      color: $text-color-main-btn;
+      background: $bg-color-main-btn;
       border-radius: 4px;
       outline: none;
       text-align: center;
@@ -332,7 +333,7 @@ a {
       }
 
       .text-block {
-        background: #f9f9f9;
+        background: $bg-news-text-block;
         padding: 20px 25px 23px 25px;
 
         .inner-text-wrap {
@@ -355,7 +356,7 @@ a {
         }
 
         .read-more {
-          color: #FF0303;
+          color: $read-more-color;
           font-weight: bold;
           font-size: 14px;
           line-height: 19px;
@@ -385,8 +386,7 @@ a {
               border: solid black;
               border-width: 0 2px 2px 0;
               display: inline-block;
-              border-color: #FF0303;
-
+              border-color: $read-more-color
             }
 
             .right-arrow {
@@ -401,7 +401,7 @@ a {
               width: 10px;
               height: 2px;
               display: inline-block;
-              background-color: red;
+              background-color: $read-more-color;
               position: absolute;
               transition: 0.4s;
               top: 3px;
@@ -415,35 +415,11 @@ a {
   }
 
   &__name-news {
-    color: #171920;
+    color: $text-heading-one-news;
     margin-bottom: 30px;
     font-weight: bold;
     font-size: 30px;
     line-height: 41px;
-  }
-
-  &__menu-list {
-
-    li {
-      margin-right: 60px;
-
-      a {
-        font-weight: normal;
-        font-size: 16px;
-        line-height: 22px;
-        color: #B7B7B7;
-        text-transform: uppercase;
-        transition: color 0.4s;
-
-        &:hover {
-          color: #171920;
-        }
-      }
-
-      .active {
-        color: #171920;
-      }
-    }
   }
 
   &__main-btn {
@@ -452,9 +428,9 @@ a {
       border: none;
       width: 100%;
       height: 40px;
-      color: #FF0303;
+      color: $main-btn-one-news;
       border-radius: 4px;
-      border: 1px solid #FF0303;
+      border: 1px solid $main-btn-one-news;
       outline: none;
       text-align: center;
       font-family: Open Sans;
@@ -503,7 +479,7 @@ a {
         font-weight: normal;
         font-size: 14px;
         line-height: 19px;
-        color: #5C5E5E;
+        color: $rating-bk-gift-color;
 
         img {
           vertical-align: baseline;
@@ -515,13 +491,13 @@ a {
 
       .btn-link {
         border-radius: 4px;
-        background: #FF0303;
+        background: $btn-color-rating;
         padding: 7px 21px 8px 21px;
         font-style: normal;
         font-weight: bold;
         font-size: 14px;
         line-height: 19px;
-        color: #FFFFFF;
+        color: $btn-color-rating-text;
         letter-spacing: 0.05em;
       }
     }
@@ -532,8 +508,8 @@ a {
       width: 100%;
       height: 40px;
       padding: 0;
-      color: aliceblue;
-      background: #171920;
+      color: $color-text-btn-rating-footer;
+      background: $bg-btn-rating-footer;
       border: none;
       border-radius: 4px;
       font-weight: bold;
@@ -551,7 +527,7 @@ a {
 /*----- Footer-----*/
 
 .footer {
-  background: #171920;
+  background: $footer-bg-color;
   color: $color-text-footer;
   font-size: 12px;
 
@@ -562,11 +538,11 @@ a {
       margin-right: 7px;
 
       .eighteen {
-        color: aliceblue;
+        color: $eighteen-text-color;
         font-size: 17px;
         width: 21px;
         height: 18px;
-        background-color: red;
+        background-color: $eighteen-bg-color;
         border-radius: 4px;
       }
     }
@@ -575,11 +551,10 @@ a {
       display: inline-block;
       vertical-align: sub;
     }
-
   }
 
   &__renouncement {
-    border-top: 1px solid grey;
+    border-top: 1px solid $footer-renouncement-color;
   }
 
 }

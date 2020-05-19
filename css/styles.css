@@ -160,7 +160,7 @@ a:hover {
             width: 10px;
             height: 2px;
             display: inline-block;
-            background-color: red;
+            background-color: #FF0303;
             position: absolute;
             transition: 0.4s;
             top: 3px;
@@ -271,7 +271,7 @@ a:hover {
             width: 10px;
             height: 2px;
             display: inline-block;
-            background-color: red;
+            background-color: #FF0303;
             position: absolute;
             transition: 0.4s;
             top: 3px;
@@ -284,20 +284,6 @@ a:hover {
   font-weight: bold;
   font-size: 30px;
   line-height: 41px; }
-
-.main-one-news__menu-list li {
-  margin-right: 60px; }
-  .main-one-news__menu-list li a {
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 22px;
-    color: #B7B7B7;
-    text-transform: uppercase;
-    transition: color 0.4s; }
-    .main-one-news__menu-list li a:hover {
-      color: #171920; }
-  .main-one-news__menu-list li .active {
-    color: #171920; }
 
 .main-one-news__main-btn .main-btn {
   border: none;

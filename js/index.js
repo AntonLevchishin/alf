@@ -19,7 +19,9 @@ router
   })
   .add(/news/, () => {
     $("#app").load("pages/main.html", function () {
-      $("#content").load("pages/news.html", function () {});
+      $("#content").load("pages/raitingBk.html", function () {
+        $("#bkBlock").load("pages/news.html", function () {});
+      });
     });
   })
   .add(/products\/(.*)\/specification\/(.*)/, (id, specification) => {
@@ -30,7 +32,9 @@ router
 
   .add(/n\/(.*)/, (id) => {
     $("#app").load("pages/main.html", function () {
-      $("#content").load("pages/news/" + id + ".html", function () {});
+      $("#content").load("pages/raitingBk.html", function () {
+        $("#bkBlock").load("pages/news/" + id + ".html", function () {});
+      });
     });
   })
   .add("", () => {
@@ -38,6 +42,8 @@ router
     //console.log('welcome in catch all controller');
 
     $("#app").load("pages/main.html", function () {
-      $("#content").load("pages/news.html", function () {});
+      $("#content").load("pages/raitingBk.html", function () {
+        $("#bkBlock").load("pages/news.html", function () {});
+      });
     });
   });
