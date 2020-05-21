@@ -24,6 +24,13 @@ router
       });
     });
   })
+  .add(/all/, () => {
+    $("#app").load("pages/main.html", function () {
+      $("#content").load("pages/raitingBk.html", function () {
+        $("#bkBlock").load("pages/newsall.html", function () {});
+      });
+    });
+  })
   .add(/products\/(.*)\/specification\/(.*)/, (id, specification) => {
     alert(`products: ${id} specification: ${specification}`);
 
